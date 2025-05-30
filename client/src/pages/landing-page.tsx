@@ -195,12 +195,10 @@ export default function LandingPage() {
             </h1>
             
             <div className="mb-6">
-              <iframe 
-                src="https://drive.google.com/file/d/1gDY9ZrhPNY5dJjT_pQ2AINKRwClOK5Ux/preview"
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg h-64"
-                frameBorder="0"
-                allowFullScreen
-                title="Frustrated businessman with failed property ads"
+              <img 
+                src="https://drive.google.com/uc?export=view&id=1gDY9ZrhPNY5dJjT_pQ2AINKRwClOK5Ux"
+                alt="Frustrated businessman with failed property ads"
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />
             </div>
             
