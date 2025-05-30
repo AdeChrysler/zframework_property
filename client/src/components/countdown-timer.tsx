@@ -13,9 +13,9 @@ export default function CountdownTimer({ className = "" }: CountdownTimerProps) 
   });
 
   useEffect(() => {
-    // Set target date to 7 days from now
+    // Set target date to 3 hours from now
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 7);
+    targetDate.setHours(targetDate.getHours() + 3);
 
     const timer = setInterval(() => {
       const now = new Date().getTime();

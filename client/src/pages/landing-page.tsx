@@ -89,19 +89,19 @@ export default function LandingPage() {
       name: "Ahmad Hidayat",
       role: "Property Developer",
       initials: "AH",
-      quote: "Setelah menerapkan blueprint ini, lead quality meningkat 300% dan cost per lead turun drastis. ROI iklan property saya sekarang sangat profitable."
+      quote: "Anjir serius ini framework gila banget! Lead quality naik 300% dalam 2 bulan doang. Sekarang yang datang beneran serius semua, bukan cuma liat-liat."
     },
     {
       name: "Sari Permata", 
       role: "Marketing Manager",
       initials: "SP",
-      quote: "Blueprint ini sangat praktis dan mudah diikuti. Dalam 2 minggu implementasi, sudah ada 15 leads serius yang booking viewing unit."
+      quote: "Gila sih ini framework, praktis banget dan langsung bisa dipake. 2 minggu udah ada 15 orang booking viewing unit! Sales team pada seneng banget."
     },
     {
       name: "Rizki Kurniawan",
       role: "Sales Director", 
       initials: "RK",
-      quote: "Akhirnya ada panduan yang komprehensif tapi tidak ribet. Sales team sekarang lebih senang karena leads yang masuk lebih qualified."
+      quote: "Finally ada yang komprehensif tapi gak ribet! Tim sales sekarang kerjaannya jadi gampang karena leads yang masuk emang udah qualified semua."
     }
   ];
 
@@ -147,12 +147,12 @@ export default function LandingPage() {
   ];
 
   const inclusions = [
-    "4 Modul Lengkap Property Ads Blueprint",
-    "Template Creative Meta Ads Siap Pakai",
-    "Landing Page Template yang Converting",
-    "Script Follow-up WhatsApp & Email", 
-    "Lifetime Access & Updates",
-    "Konsultasi 1-on-1 (Bonus Senilai Rp 500.000)"
+    "4 Modul Lengkap Six Zenith Framework",
+    "Template Creative Meta Ads yang Udah Terbukti ROI Tinggi",
+    "Landing Page Template yang Converting Rate 15%+",
+    "Script Follow-up WhatsApp & Email yang Bikin Closing", 
+    "Lifetime Access & Updates Selamanya",
+    "Konsultasi 1-on-1 Eksklusif (Senilai Rp 7.200.000)"
   ];
 
   const finalBenefits = [
@@ -339,9 +339,9 @@ export default function LandingPage() {
           <div>
             <div className="text-center mb-8">
               <h2 className="text-xl font-bold mb-2">
-                <span className="text-blue-accent">Property Ads Blueprint</span>
+                <span className="text-blue-accent">Six Zenith Framework</span>
               </h2>
-              <p className="text-base text-slate-300">Panduan Step-by-Step Yang Akan Anda Pelajari</p>
+              <p className="text-base text-slate-300">Rahasia Step-by-Step Yang Bikin Developer Lain Gigit Jari</p>
             </div>
             
             <div className="space-y-4">
@@ -374,15 +374,17 @@ export default function LandingPage() {
                 PENAWARAN TERBATAS
               </div>
               <h2 className="text-xl font-bold mb-3">
-                Hemat <span className="text-yellow-400">Rp 200.000</span> Hari Ini!
+                Hemat <span className="text-yellow-400">Rp 6.900.000</span> Hari Ini!
               </h2>
             </div>
             
             <Card className="bg-slate-800/80 backdrop-blur-sm border-blue-accent/50 shadow-2xl">
               <CardContent className="p-6">
                 <div className="text-center mb-6">
-                  <div className="flex items-center justify-center space-x-3 mb-4">
-                    <span className="text-lg text-slate-400 line-through">Rp 500.000</span>
+                  <div className="text-center mb-4">
+                    <div className="text-sm text-slate-400 mb-1">Harga Konsultasi Normal:</div>
+                    <span className="text-lg text-slate-400 line-through">Rp 7.200.000</span>
+                    <div className="text-sm text-slate-300 mt-2 mb-2">Tapi hari ini cuma:</div>
                     <span className="text-3xl font-bold text-yellow-400">Rp 300.000</span>
                   </div>
                   
@@ -457,16 +459,16 @@ export default function LandingPage() {
         <div className="px-4">
           <div className="text-center">
             <h2 className="text-xl font-bold mb-4">
-              Siap Upgrade Strategi Meta Ads Property Anda?
+              Siap Jadi Developer Property Yang Bikin Iri?
             </h2>
             
             <p className="text-base text-slate-200 mb-6">
-              Jangan biarkan kompetitor terus unggul. Saatnya Anda menggunakan strategi yang sama dengan developer property sukses.
+              Jangan biarkan kompetitor terus kebanjiran leads berkualitas. Saatnya pake framework yang sama dengan developer sukses!
             </p>
             
             <Card className="bg-slate-800/50 backdrop-blur-sm border-blue-accent/50 shadow-2xl mb-6">
               <CardContent className="p-4">
-                <h3 className="text-base font-semibold mb-4 text-white">Dengan Property Ads Blueprint, Anda Mendapatkan:</h3>
+                <h3 className="text-base font-semibold mb-4 text-white">Dengan Six Zenith Framework, Anda Mendapatkan:</h3>
                 
                 <div className="space-y-3 text-left">
                   {finalBenefits.map((benefit, index) => (
@@ -511,11 +513,11 @@ export default function LandingPage() {
               <div className="space-y-2 text-slate-400 text-sm">
                 <div className="flex items-center justify-center">
                   <Mail className="mr-2 h-4 w-4 text-blue-accent" />
-                  <span>support@propertyads.pro</span>
+                  <span>digital@sixzenith.com</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <Phone className="mr-2 h-4 w-4 text-blue-accent" />
-                  <span>+62 812-3456-7890</span>
+                  <span>+62 889 889 889 18</span>
                 </div>
               </div>
             </div>
