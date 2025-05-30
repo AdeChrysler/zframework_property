@@ -195,10 +195,12 @@ export default function LandingPage() {
             </h1>
             
             <div className="mb-6">
-              <img 
-                src="/src/../attached_assets/ChatGPT Image May 30, 2025, 10_47_05 AM_1748577160799.png" 
-                alt="Frustrated businessman with failed property ads" 
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+              <iframe 
+                src="https://drive.google.com/file/d/1gDY9ZrhPNY5dJjT_pQ2AINKRwClOK5Ux/preview"
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg h-64"
+                frameBorder="0"
+                allowFullScreen
+                title="Frustrated businessman with failed property ads"
               />
             </div>
             
