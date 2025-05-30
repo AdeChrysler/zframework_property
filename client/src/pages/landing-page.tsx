@@ -199,6 +199,7 @@ export default function LandingPage() {
                 src="https://drive.google.com/uc?export=view&id=1gDY9ZrhPNY5dJjT_pQ2AINKRwClOK5Ux"
                 alt="Frustrated businessman with failed property ads"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+                width="640"
               />
             </div>
             
