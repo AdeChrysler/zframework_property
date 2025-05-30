@@ -202,7 +202,7 @@ export default function LandingPage() {
               />
             </div>
             
-            <p className="text-base text-slate-200 mb-6 leading-relaxed"></p>
+            <p className="text-base text-slate-200 mb-6 leading-relaxed">
               Framework rahasia yang dipakai developer property untuk meraup <strong>miliaran rupiah</strong> dari Meta Ads
             </p>
             
