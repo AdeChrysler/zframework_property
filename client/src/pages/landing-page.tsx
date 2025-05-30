@@ -196,7 +196,7 @@ export default function LandingPage() {
             
             <div className="mb-6">
               <img 
-                src="https://drive.google.com/uc?export=view&id=1gDY9ZrhPNY5dJjT_pQ2AINKRwClOK5Ux"
+                src="https://i.postimg.cc/kMSf12hm/Chat-GPT-Image-May-30-2025-10-47-05-AM.png"
                 alt="Frustrated businessman with failed property ads"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
                 width="640"
