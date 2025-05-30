@@ -196,7 +196,7 @@ export default function LandingPage() {
             
             <div className="mb-6">
               <img 
-                src="/attached_assets/ChatGPT Image May 30, 2025, 10_47_05 AM_1748577160799.png" 
+                src="/src/../attached_assets/ChatGPT Image May 30, 2025, 10_47_05 AM_1748577160799.png" 
                 alt="Frustrated businessman with failed property ads" 
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />
