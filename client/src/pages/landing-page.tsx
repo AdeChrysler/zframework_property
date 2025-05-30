@@ -190,10 +190,9 @@ export default function LandingPage() {
         <div className="px-4 relative z-10">
           <div className="text-center">
             <h1 className="text-2xl font-bold mb-4 leading-tight">
-              Kenapa Iklan Property Anda Cuma Jadi{" "}
-              <span className="text-blue-accent">Pembakar Duit?</span>
+              Ngiklan serasa main jud*l?{"   "}
+              <span className="text-blue-accent">Stop Rugi & asal2 an 👇🏻 </span>
             </h1>
-            
             <div className="mb-6">
               <img 
                 src="https://i.postimg.cc/kMSf12hm/Chat-GPT-Image-May-30-2025-10-47-05-AM.png"
