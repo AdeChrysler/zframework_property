@@ -1,0 +1,98 @@
+# Replit Prompt untuk Landing Page Property Meta Ads
+
+Buat landing page untuk produk digital "Property Ads Blueprint" dengan spesifikasi berikut:
+
+## BRANDING & DESIGN
+- **Color scheme**: Dark blue exclusive (gunakan gradien dark blue ke navy blue seperti #0B1426, #1E3A8A, #1D4ED8)
+- **Background**: Dark dengan gradien blue, modern dan premium
+- **Typography**: Sans-serif modern, clean, dan readable
+- **Style**: Minimalis, premium, professional seperti Six Zenith branding
+
+## STRUKTUR LANDING PAGE
+
+### HEADER/NAVIGATION
+- Logo: "PropertyAds Pro" (text-based, elegant)
+- Navigation sederhana: Home | Tentang | Kontak
+- CTA button di kanan atas: "BELI SEKARANG" (blue gradient button)
+
+### HERO SECTION
+- **Headline besar**: "Mengapa Meta Ads Property Anda Terasa Seperti Membakar Uang?"
+- **Subheadline**: "Pelajari strategi targeting dan creative yang biasa digunakan developer property sukses di Meta Ads"
+- **Hero CTA button**: "PELAJARI STRATEGINYA - RP 300.000"
+- Background: Dark blue gradient dengan subtle pattern atau geometric shapes
+
+### PROBLEM SECTION
+- **Judul**: "Apakah Situasi Ini Familiar?"
+- List masalah dengan icons:
+  • Budget Meta Ads habis tapi leads tidak serius
+  • Inquiry banyak tapi sedikit yang berminat beli
+  • Sales team komplain kualitas leads kurang
+  • Merasa main tebak-tebakan dengan targeting
+  • Kompetitor terlihat lebih efektif
+
+### AGITATION SECTION
+- **Judul**: "Dan Yang Lebih Frustrasi Lagi..."
+- Penjelasan tentang opportunity cost dan masalah yang berkelanjutan
+- Visual: Iconography atau simple illustrations
+
+### SOLUTION PREVIEW
+- **Judul**: "Bagaimana Jika Anda Punya Panduan Yang Menjelaskan..."
+- 4 poin value proposition dengan icons
+- Teasing benefits tanpa overpromise
+
+### SOCIAL PROOF
+- **Judul**: "Apa Kata Yang Sudah Belajar"
+- 3 testimonial cards dengan nama, role, dan feedback
+- Layout: Cards dengan subtle shadow dan blue accent
+
+### PRODUCT OVERVIEW
+- **Judul**: "Property Ads Blueprint"
+- **Subtitle**: "Panduan Step-by-Step Yang Akan Anda Pelajari"
+- 4 modul dengan deskripsi:
+  1. Buyer Persona Property
+  2. Creative Strategy  
+  3. Landing Page Optimization
+  4. Follow-Up System
+
+### PRICING SECTION
+- **Judul**: "Penawaran Terbatas"
+- Pricing card dengan:
+  - Harga normal: ~~Rp 500.000~~
+  - Harga sekarang: **Rp 300.000**
+  - List inclusions (4 modul + 3 bonus)
+  - Countdown timer (7 hari)
+  - "Hemat Rp 200.000" badge
+
+### GUARANTEE
+- **Judul**: "Jaminan 7 Hari Uang Kembali"
+- Simple explanation dengan trust badges
+- Risk reversal messaging
+
+### FINAL CTA SECTION
+- **Big headline**: "Siap Upgrade Strategi Meta Ads Property Anda?"
+- Summary of what they get
+- Large CTA button: "AKSES SEKARANG - RP 300.000"
+- Subtext: "Jaminan 7 hari uang kembali | Akses langsung | Bahasa Indonesia"
+
+### FOOTER
+- Simple footer dengan contact info dan legal links
+
+## TECHNICAL REQUIREMENTS
+- Responsive design (mobile-first)
+- Smooth scrolling dan subtle animations
+- Modern CSS (flexbox/grid)
+- Fast loading dan optimized
+- Single page application
+- CTA buttons yang stand out dengan hover effects
+
+## COPY YANG DIGUNAKAN
+Gunakan content yang sudah saya buat sebelumnya dalam bahasa Indonesia, dengan tone yang professional tapi approachable, tidak overpromise, dan fokus pada value education.
+
+## VISUAL ELEMENTS
+- Icons untuk setiap section (property, ads, targeting, etc.)
+- Subtle geometric patterns atau shapes
+- Blue gradient buttons dengan hover effects
+- Cards dengan soft shadows
+- Modern typography hierarchy
+
+Buat landing page yang converting, trustworthy, dan sesuai dengan branding dark blue premium seperti Six Zenith!
