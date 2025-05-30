@@ -170,7 +170,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div className="flex items-center justify-between h-14">
             <div className="flex items-center">
-              <h1 className="text-lg font-bold text-white">Six Zenith</h1>
+              <h1 className="text-lg font-bold text-white">Six Zenith Digital</h1>
             </div>
             
             <Button 
@@ -194,7 +194,15 @@ export default function LandingPage() {
               <span className="text-blue-accent">Pembakar Duit?</span>
             </h1>
             
-            <p className="text-base text-slate-200 mb-6 leading-relaxed">
+            <div className="mb-6">
+              <img 
+                src="/attached_assets/ChatGPT Image May 30, 2025, 10_47_05 AM_1748577160799.png" 
+                alt="Frustrated businessman with failed property ads" 
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+              />
+            </div>
+            
+            <p className="text-base text-slate-200 mb-6 leading-relaxed"></p>
               Framework rahasia yang dipakai developer property untuk meraup <strong>miliaran rupiah</strong> dari Meta Ads
             </p>
             
@@ -501,7 +509,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div className="text-center space-y-6">
             <div>
-              <h3 className="text-lg font-bold mb-3 text-white">PropertyAds Pro</h3>
+              <h3 className="text-lg font-bold mb-3 text-white">Six Zenith Digital</h3>
               <p className="text-slate-400 text-sm">
                 Membantu developer property mencapai ROI optimal melalui Meta Ads yang efektif dan terukur.
               </p>
@@ -533,7 +541,7 @@ export default function LandingPage() {
           </div>
           
           <div className="border-t border-slate-800 mt-6 pt-6 text-center text-slate-400">
-            <p className="text-xs">&copy; 2024 PropertyAds Pro. All rights reserved.</p>
+            <p className="text-xs">&copy; 2025 Six Zenith Digital. All rights reserved.</p>
           </div>
         </div>
       </footer>
