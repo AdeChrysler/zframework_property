@@ -166,33 +166,18 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-blue text-slate-50 font-sans">
-      {/* Header */}
+      {/* Header - Mobile Optimized */}
       <header className="fixed top-0 w-full bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 z-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="px-4">
+          <div className="flex items-center justify-between h-14">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-white">PropertyAds Pro</h1>
+              <h1 className="text-lg font-bold text-white">PropertyAds Pro</h1>
             </div>
             
-            <nav className="hidden md:flex items-center space-x-8">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="text-slate-300 hover:text-white transition-colors"
-              >
-                Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('tentang')}
-                className="text-slate-300 hover:text-white transition-colors"
-              >
-                Tentang
-              </button>
-              <ContactForm />
-            </nav>
-
             <Button 
               onClick={() => scrollToSection('pricing')}
-              className="bg-gradient-cta hover:opacity-90 text-white font-semibold"
+              size="sm"
+              className="bg-gradient-cta hover:opacity-90 text-white font-semibold text-xs px-3 py-2"
             >
               BELI SEKARANG
             </Button>
@@ -200,56 +185,55 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section id="home" className="pt-24 pb-16 bg-gradient-blue relative overflow-hidden">
+      {/* Hero Section - Mobile Optimized */}
+      <section id="home" className="pt-20 pb-12 bg-gradient-blue relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <div className="px-4 relative z-10">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold mb-4 leading-tight">
               Mengapa Meta Ads Property Anda Terasa Seperti{" "}
               <span className="text-blue-accent">Membakar Uang?</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-200 mb-8 leading-relaxed">
+            <p className="text-base text-slate-200 mb-6 leading-relaxed">
               Pelajari strategi targeting dan creative yang biasa digunakan developer property sukses di Meta Ads
             </p>
             
             <Button 
               onClick={() => scrollToSection('pricing')}
-              size="lg"
-              className="bg-gradient-cta hover:opacity-90 text-white font-bold text-lg px-8 py-4 h-auto"
+              className="bg-gradient-cta hover:opacity-90 text-white font-bold text-sm px-6 py-3 w-full mb-4"
             >
               PELAJARI STRATEGINYA - RP 300.000
-              <Rocket className="ml-2 h-5 w-5" />
+              <Rocket className="ml-2 h-4 w-4" />
             </Button>
             
-            <div className="mt-8 text-slate-300">
-              <Shield className="inline mr-2 h-5 w-5" />
+            <div className="text-slate-300 text-sm">
+              <Shield className="inline mr-2 h-4 w-4" />
               Jaminan 7 hari uang kembali
             </div>
           </div>
         </div>
       </section>
 
-      {/* Problem Section */}
-      <section className="py-16 bg-slate-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      {/* Problem Section - Mobile Optimized */}
+      <section className="py-12 bg-slate-900">
+        <div className="px-4">
+          <div>
+            <h2 className="text-xl font-bold text-center mb-8">
               Apakah Situasi Ini <span className="text-blue-accent">Familiar?</span>
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
               {problems.map((problem, index) => (
                 <Card key={index} className="bg-slate-800/50 border-slate-700">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center">
-                          <span className="text-white text-sm">✕</span>
+                  <CardContent className="p-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-5 h-5 rounded-full bg-red-500 flex items-center justify-center">
+                          <span className="text-white text-xs">✕</span>
                         </div>
                       </div>
-                      <p className="text-slate-200 font-medium">{problem}</p>
+                      <p className="text-slate-200 text-sm font-medium">{problem}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -259,22 +243,22 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Agitation Section */}
-      <section className="py-16 bg-gradient-blue-subtle">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+      {/* Agitation Section - Mobile Optimized */}
+      <section className="py-12 bg-gradient-blue-subtle">
+        <div className="px-4">
+          <div className="text-center">
+            <h2 className="text-xl font-bold mb-6">
               Dan Yang Lebih <span className="text-red-400">Frustrasi</span> Lagi...
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="space-y-6 mt-8">
               {agitationPoints.map((point, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <point.icon className="h-8 w-8 text-red-400" />
+                  <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <point.icon className="h-6 w-6 text-red-400" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{point.title}</h3>
-                  <p className="text-slate-300">{point.description}</p>
+                  <h3 className="text-base font-semibold mb-2">{point.title}</h3>
+                  <p className="text-slate-300 text-sm">{point.description}</p>
                 </div>
               ))}
             </div>
@@ -282,26 +266,26 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Solution Preview */}
-      <section className="py-16 bg-slate-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+      {/* Solution Preview - Mobile Optimized */}
+      <section className="py-12 bg-slate-900">
+        <div className="px-4">
+          <div>
+            <h2 className="text-xl font-bold text-center mb-2">
               Bagaimana Jika Anda Punya Panduan Yang Menjelaskan...
             </h2>
-            <p className="text-xl text-slate-300 text-center mb-12">Blueprint yang sudah terbukti berhasil</p>
+            <p className="text-base text-slate-300 text-center mb-8">Blueprint yang sudah terbukti berhasil</p>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
               {solutionPoints.map((point, index) => (
                 <Card key={index} className="bg-gradient-blue-subtle/30 border-blue-accent/30">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <point.icon className="h-6 w-6 text-blue-accent" />
+                  <CardContent className="p-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <point.icon className="h-5 w-5 text-blue-accent" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold mb-2 text-white">{point.title}</h3>
-                        <p className="text-slate-300">{point.description}</p>
+                        <h3 className="text-base font-semibold mb-2 text-white">{point.title}</h3>
+                        <p className="text-slate-300 text-sm">{point.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -312,33 +296,33 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="py-16 bg-gradient-blue-subtle">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      {/* Social Proof - Mobile Optimized */}
+      <section className="py-12 bg-gradient-blue-subtle">
+        <div className="px-4">
+          <div>
+            <h2 className="text-xl font-bold text-center mb-8">
               Apa Kata Yang Sudah <span className="text-blue-accent">Belajar</span>
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-6">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-slate-800/50 border-slate-700 hover:border-blue-accent/50 transition-colors">
-                  <CardContent className="p-6">
-                    <div className="flex items-center mb-4">
+                <Card key={index} className="bg-slate-800/50 border-slate-700">
+                  <CardContent className="p-4">
+                    <div className="flex items-center mb-3">
                       <div className="flex text-yellow-400">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-current" />
+                          <Star key={i} className="h-3 w-3 fill-current" />
                         ))}
                       </div>
                     </div>
-                    <p className="text-slate-200 mb-4 italic">"{testimonial.quote}"</p>
+                    <p className="text-slate-200 mb-4 italic text-sm">"{testimonial.quote}"</p>
                     <div className="flex items-center">
-                      <div className="w-10 h-10 bg-blue-accent rounded-full flex items-center justify-center mr-3">
-                        <span className="text-white font-semibold text-sm">{testimonial.initials}</span>
+                      <div className="w-8 h-8 bg-blue-accent rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white font-semibold text-xs">{testimonial.initials}</span>
                       </div>
                       <div>
-                        <p className="font-semibold text-white">{testimonial.name}</p>
-                        <p className="text-slate-400 text-sm">{testimonial.role}</p>
+                        <p className="font-semibold text-white text-sm">{testimonial.name}</p>
+                        <p className="text-slate-400 text-xs">{testimonial.role}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -349,28 +333,30 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Product Overview */}
-      <section id="tentang" className="py-16 bg-slate-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      {/* Product Overview - Mobile Optimized */}
+      <section id="tentang" className="py-12 bg-slate-900">
+        <div className="px-4">
+          <div>
+            <div className="text-center mb-8">
+              <h2 className="text-xl font-bold mb-2">
                 <span className="text-blue-accent">Property Ads Blueprint</span>
               </h2>
-              <p className="text-xl text-slate-300">Panduan Step-by-Step Yang Akan Anda Pelajari</p>
+              <p className="text-base text-slate-300">Panduan Step-by-Step Yang Akan Anda Pelajari</p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4">
               {modules.map((module, index) => (
                 <Card key={index} className="bg-gradient-blue-subtle/20 border-blue-accent/30">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-accent rounded-full flex items-center justify-center mr-4">
-                        <span className="text-white font-bold">{module.number}</span>
+                  <CardContent className="p-4">
+                    <div className="flex items-start mb-3">
+                      <div className="w-8 h-8 bg-blue-accent rounded-full flex items-center justify-center mr-3 mt-1">
+                        <span className="text-white font-bold text-sm">{module.number}</span>
                       </div>
-                      <h3 className="text-xl font-semibold text-white">{module.title}</h3>
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold text-white mb-2">{module.title}</h3>
+                        <p className="text-slate-300 text-sm">{module.description}</p>
+                      </div>
                     </div>
-                    <p className="text-slate-300">{module.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -379,54 +365,54 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="py-16 bg-gradient-blue">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="inline-block bg-red-500 text-white px-4 py-2 rounded-full mb-4 font-semibold">
+      {/* Pricing - Mobile Optimized */}
+      <section id="pricing" className="py-12 bg-gradient-blue">
+        <div className="px-4">
+          <div>
+            <div className="text-center mb-8">
+              <div className="inline-block bg-red-500 text-white px-3 py-2 rounded-full mb-3 font-semibold text-sm">
                 PENAWARAN TERBATAS
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-xl font-bold mb-3">
                 Hemat <span className="text-yellow-400">Rp 200.000</span> Hari Ini!
               </h2>
             </div>
             
             <Card className="bg-slate-800/80 backdrop-blur-sm border-blue-accent/50 shadow-2xl">
-              <CardContent className="p-8">
-                <div className="text-center mb-8">
-                  <div className="flex items-center justify-center space-x-4 mb-4">
-                    <span className="text-2xl text-slate-400 line-through">Rp 500.000</span>
-                    <span className="text-4xl md:text-5xl font-bold text-yellow-400">Rp 300.000</span>
+              <CardContent className="p-6">
+                <div className="text-center mb-6">
+                  <div className="flex items-center justify-center space-x-3 mb-4">
+                    <span className="text-lg text-slate-400 line-through">Rp 500.000</span>
+                    <span className="text-3xl font-bold text-yellow-400">Rp 300.000</span>
                   </div>
                   
                   <div className="mb-6">
-                    <p className="text-slate-300 mb-2">Promo berakhir dalam:</p>
+                    <p className="text-slate-300 mb-2 text-sm">Promo berakhir dalam:</p>
                     <CountdownTimer />
                   </div>
                 </div>
                 
-                <div className="space-y-4 mb-8">
-                  <h3 className="text-xl font-semibold mb-4 text-white">Yang Anda Dapatkan:</h3>
+                <div className="space-y-3 mb-6">
+                  <h3 className="text-base font-semibold mb-3 text-white">Yang Anda Dapatkan:</h3>
                   
                   {inclusions.map((inclusion, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-                      <span className="text-slate-200">{inclusion}</span>
+                    <div key={index} className="flex items-start space-x-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-400 mt-1 flex-shrink-0" />
+                      <span className="text-slate-200 text-sm">{inclusion}</span>
                     </div>
                   ))}
                 </div>
                 
                 <Button 
                   onClick={handlePurchase}
-                  className="w-full bg-gradient-cta hover:opacity-90 text-white font-bold text-xl py-4 h-auto mb-4"
+                  className="w-full bg-gradient-cta hover:opacity-90 text-white font-bold text-lg py-4 h-auto mb-4"
                 >
                   AKSES SEKARANG - RP 300.000
-                  <Shield className="ml-2 h-5 w-5" />
+                  <Shield className="ml-2 h-4 w-4" />
                 </Button>
                 
-                <div className="text-center text-slate-300 text-sm">
-                  <Shield className="inline mr-1 h-4 w-4" />
+                <div className="text-center text-slate-300 text-xs">
+                  <Shield className="inline mr-1 h-3 w-3" />
                   Jaminan 7 hari uang kembali | Akses langsung | Bahasa Indonesia
                 </div>
               </CardContent>
@@ -435,30 +421,30 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Guarantee */}
-      <section className="py-16 bg-slate-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Shield className="h-10 w-10 text-green-400" />
+      {/* Guarantee - Mobile Optimized */}
+      <section className="py-12 bg-slate-900">
+        <div className="px-4">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Shield className="h-8 w-8 text-green-400" />
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-xl font-bold mb-4">
               Jaminan <span className="text-green-400">7 Hari</span> Uang Kembali
             </h2>
             
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-sm text-slate-300 mb-8 leading-relaxed">
               Kami sangat yakin dengan kualitas Property Ads Blueprint ini. Jika dalam 7 hari Anda merasa tidak puas atau blueprint ini tidak sesuai ekspektasi, kami akan mengembalikan 100% uang Anda tanpa pertanyaan.
             </p>
             
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="space-y-6 mt-8">
               {guaranteeFeatures.map((feature, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-blue-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="h-8 w-8 text-blue-accent" />
+                  <div className="w-12 h-12 bg-blue-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <feature.icon className="h-6 w-6 text-blue-accent" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2 text-white">{feature.title}</h3>
-                  <p className="text-slate-400">{feature.description}</p>
+                  <h3 className="text-base font-semibold mb-2 text-white">{feature.title}</h3>
+                  <p className="text-slate-400 text-sm">{feature.description}</p>
                 </div>
               ))}
             </div>
