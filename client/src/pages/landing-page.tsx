@@ -36,28 +36,28 @@ export default function LandingPage() {
   };
 
   const problems = [
-    "Budget Meta Ads habis tapi leads tidak serius",
-    "Inquiry banyak tapi sedikit yang berminat beli", 
-    "Sales team komplain kualitas leads kurang",
-    "Merasa main tebak-tebakan dengan targeting",
-    "Kompetitor terlihat lebih efektif dan mendapat leads berkualitas"
+    "Duit iklan ratusan juta melayang, tapi yang datang cuma yang iseng doang",
+    "Notifikasi inquiry rame, eh pas ditanya serius... 'Masih mikir-mikir dulu'", 
+    "Sales udah capek follow up, tapi yang closing cuma sedikit banget",
+    "Rasanya kayak main slot online - untung-untungan doang targetingnya",
+    "Liat kompetitor selalu rame unit terjual, sementara kita masih bengong"
   ];
 
   const agitationPoints = [
     {
       icon: Clock,
-      title: "Waktu Terbuang",
-      description: "Berbulan-bulan trial error tanpa hasil yang jelas"
+      title: "Udah Setahun Begini Terus",
+      description: "Bolak-balik coba strategi baru, ujung-ujungnya sama aja boong"
     },
     {
       icon: TrendingDown,
-      title: "Opportunity Cost", 
-      description: "Pesaing yang sudah maju sementara Anda masih berjuang"
+      title: "Ketinggalan Kereta", 
+      description: "Kompetitor udah kebanjiran customer, kita masih nyari formula"
     },
     {
       icon: Banknote,
-      title: "Budget Terkuras",
-      description: "Uang iklan habis untuk leads yang tidak qualified"
+      title: "Kantong Jebol",
+      description: "Duit ratusan juta ilang percuma, malah dapat leads yang gak jelas"
     }
   ];
 
@@ -171,7 +171,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div className="flex items-center justify-between h-14">
             <div className="flex items-center">
-              <h1 className="text-lg font-bold text-white">PropertyAds Pro</h1>
+              <h1 className="text-lg font-bold text-white">Six Zenith</h1>
             </div>
             
             <Button 
@@ -191,19 +191,19 @@ export default function LandingPage() {
         <div className="px-4 relative z-10">
           <div className="text-center">
             <h1 className="text-2xl font-bold mb-4 leading-tight">
-              Mengapa Meta Ads Property Anda Terasa Seperti{" "}
-              <span className="text-blue-accent">Membakar Uang?</span>
+              Kenapa Iklan Property Anda Cuma Jadi{" "}
+              <span className="text-blue-accent">Pembakar Duit?</span>
             </h1>
             
             <p className="text-base text-slate-200 mb-6 leading-relaxed">
-              Pelajari strategi targeting dan creative yang biasa digunakan developer property sukses di Meta Ads
+              Framework rahasia yang dipakai developer property untuk meraup <strong>miliaran rupiah</strong> dari Meta Ads
             </p>
             
             <Button 
               onClick={() => scrollToSection('pricing')}
               className="bg-gradient-cta hover:opacity-90 text-white font-bold text-sm px-6 py-3 w-full mb-4"
             >
-              PELAJARI STRATEGINYA - RP 300.000
+              DAPATKAN FRAMEWORK RAHASIANYA - RP 300.000
               <Rocket className="ml-2 h-4 w-4" />
             </Button>
             
@@ -220,7 +220,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div>
             <h2 className="text-xl font-bold text-center mb-8">
-              Apakah Situasi Ini <span className="text-blue-accent">Familiar?</span>
+              Anjir... <span className="text-blue-accent">Kok Bisa Tau?</span>
             </h2>
             
             <div className="space-y-4">
@@ -248,7 +248,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div className="text-center">
             <h2 className="text-xl font-bold mb-6">
-              Dan Yang Lebih <span className="text-red-400">Frustrasi</span> Lagi...
+              Terus Yang Bikin <span className="text-red-400">Kesel Banget</span> Lagi...
             </h2>
             
             <div className="space-y-6 mt-8">
@@ -271,9 +271,9 @@ export default function LandingPage() {
         <div className="px-4">
           <div>
             <h2 className="text-xl font-bold text-center mb-2">
-              Bagaimana Jika Anda Punya Panduan Yang Menjelaskan...
+              Gimana Kalau Ada Yang Kasih Tau Rahasia...
             </h2>
-            <p className="text-base text-slate-300 text-center mb-8">Blueprint yang sudah terbukti berhasil</p>
+            <p className="text-base text-slate-300 text-center mb-8">Framework yang udah terbukti bikin <strong>developer lain cemburu</strong></p>
             
             <div className="space-y-4">
               {solutionPoints.map((point, index) => (
@@ -301,7 +301,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div>
             <h2 className="text-xl font-bold text-center mb-8">
-              Apa Kata Yang Sudah <span className="text-blue-accent">Belajar</span>
+              Yang Udah Coba <span className="text-blue-accent">Langsung Bilang</span>
             </h2>
             
             <div className="space-y-6">
