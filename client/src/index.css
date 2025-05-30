@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 100% 6%; /* #0B1426 */
+  --foreground: 210 11% 98%; /* #F5F7FA */
+  --muted: 215 25% 27%; /* #3E4A5B */
+  --muted-foreground: 215 10% 70%; /* #A8B2C1 */
+  --popover: 210 100% 6%; /* #0B1426 */
+  --popover-foreground: 210 11% 98%; /* #F5F7FA */
+  --card: 217 32% 17%; /* #1E293B */
+  --card-foreground: 210 11% 98%; /* #F5F7FA */
+  --border: 217 32% 17%; /* #1E293B */
+  --input: 217 32% 17%; /* #1E293B */
+  --primary: 217 91% 60%; /* #1D4ED8 */
+  --primary-foreground: 210 40% 98%; /* #F8FAFC */
+  --secondary: 215 25% 27%; /* #3E4A5B */
+  --secondary-foreground: 210 11% 98%; /* #F5F7FA */
+  --accent: 217 91% 60%; /* #1D4ED8 */
+  --accent-foreground: 210 40% 98%; /* #F8FAFC */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+  --ring: 217 91% 60%; /* #1D4ED8 */
+  --radius: 0.5rem;
+  
+  /* Custom colors for the landing page */
+  --navy-deep: 210 100% 6%; /* #0B1426 */
+  --navy-royal: 217 91% 30%; /* #1E3A8A */
+  --blue-bright: 217 91% 60%; /* #1D4ED8 */
+  --blue-accent: 213 94% 68%; /* #3B82F6 */
+}
+
+.dark {
+  --background: 210 100% 6%; /* #0B1426 */
+  --foreground: 210 11% 98%; /* #F5F7FA */
+  --muted: 215 25% 27%; /* #3E4A5B */
+  --muted-foreground: 215 10% 70%; /* #A8B2C1 */
+  --popover: 210 100% 6%; /* #0B1426 */
+  --popover-foreground: 210 11% 98%; /* #F5F7FA */
+  --card: 217 32% 17%; /* #1E293B */
+  --card-foreground: 210 11% 98%; /* #F5F7FA */
+  --border: 217 32% 17%; /* #1E293B */
+  --input: 217 32% 17%; /* #1E293B */
+  --primary: 217 91% 60%; /* #1D4ED8 */
+  --primary-foreground: 210 40% 98%; /* #F8FAFC */
+  --secondary: 215 25% 27%; /* #3E4A5B */
+  --secondary-foreground: 210 11% 98%; /* #F5F7FA */
+  --accent: 217 91% 60%; /* #1D4ED8 */
+  --accent-foreground: 210 40% 98%; /* #F8FAFC */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+  --ring: 217 91% 60%; /* #1D4ED8 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-blue {
+    background: linear-gradient(135deg, hsl(var(--navy-deep)) 0%, hsl(var(--navy-royal)) 50%, hsl(var(--blue-bright)) 100%);
+  }
+  
+  .bg-gradient-blue-subtle {
+    background: linear-gradient(135deg, hsl(var(--navy-deep)) 0%, hsl(var(--navy-royal)) 100%);
+  }
+  
+  .bg-gradient-cta {
+    background: linear-gradient(135deg, hsl(var(--blue-bright)) 0%, hsl(var(--blue-accent)) 100%);
+  }
+  
+  .text-navy-deep {
+    color: hsl(var(--navy-deep));
+  }
+  
+  .text-navy-royal {
+    color: hsl(var(--navy-royal));
+  }
+  
+  .text-blue-bright {
+    color: hsl(var(--blue-bright));
+  }
+  
+  .text-blue-accent {
+    color: hsl(var(--blue-accent));
+  }
+  
+  .border-blue-accent {
+    border-color: hsl(var(--blue-accent));
+  }
+}
