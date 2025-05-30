@@ -31,8 +31,7 @@ export default function LandingPage() {
   };
 
   const handlePurchase = () => {
-    // This would integrate with payment gateway in production
-    alert('Redirect ke halaman pembayaran akan diimplementasikan di sini');
+    window.open('https://api.whatsapp.com/send?phone=6288988988918&text=Halo%20saya%20ingin%20beli%20Six%20Zenith%20Framework%20for%20Property%20nya.', '_blank');
   };
 
   const problems = [
@@ -89,13 +88,13 @@ export default function LandingPage() {
       name: "Ahmad Hidayat",
       role: "Property Developer",
       initials: "AH",
-      quote: "Anjir serius ini framework gila banget! Lead quality naik 300% dalam 2 bulan doang. Sekarang yang datang beneran serius semua, bukan cuma liat-liat."
+      quote: "Framework ini luar biasa! Lead quality naik 300% dalam 2 bulan. Sekarang yang datang benar-benar serius untuk membeli, bukan sekadar window shopping."
     },
     {
       name: "Sari Permata", 
       role: "Marketing Manager",
       initials: "SP",
-      quote: "Gila sih ini framework, praktis banget dan langsung bisa dipake. 2 minggu udah ada 15 orang booking viewing unit! Sales team pada seneng banget."
+      quote: "Framework ini sangat praktis dan langsung bisa diterapkan. Dalam 2 minggu sudah ada 15 orang booking viewing unit! Sales team sangat senang dengan hasilnya."
     },
     {
       name: "Rizki Kurniawan",
@@ -203,7 +202,7 @@ export default function LandingPage() {
               onClick={() => scrollToSection('pricing')}
               className="bg-gradient-cta hover:opacity-90 text-white font-bold text-sm px-6 py-3 w-full mb-4"
             >
-              DAPATKAN FRAMEWORK RAHASIANYA - RP 300.000
+              DAPATKAN SEKARANG - RP 300.000
               <Rocket className="ml-2 h-4 w-4" />
             </Button>
             
@@ -220,7 +219,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div>
             <h2 className="text-xl font-bold text-center mb-8">
-              Anjir... <span className="text-blue-accent">Kok Bisa Tau?</span>
+              Merasa Familiar? <span className="text-blue-accent">Mari Kita Bahas</span>
             </h2>
             
             <div className="space-y-4">
@@ -248,7 +247,7 @@ export default function LandingPage() {
         <div className="px-4">
           <div className="text-center">
             <h2 className="text-xl font-bold mb-6">
-              Terus Yang Bikin <span className="text-red-400">Kesel Banget</span> Lagi...
+              Yang Lebih <span className="text-red-400">Menyakitkan</span> Lagi...
             </h2>
             
             <div className="space-y-6 mt-8">
@@ -409,7 +408,7 @@ export default function LandingPage() {
                   onClick={handlePurchase}
                   className="w-full bg-gradient-cta hover:opacity-90 text-white font-bold text-lg py-4 h-auto mb-4"
                 >
-                  AKSES SEKARANG - RP 300.000
+                  BELI SEKARANG - RP 300.000
                   <Shield className="ml-2 h-4 w-4" />
                 </Button>
                 
@@ -485,7 +484,7 @@ export default function LandingPage() {
               onClick={handlePurchase}
               className="w-full bg-gradient-cta hover:opacity-90 text-white font-bold text-lg px-8 py-4 h-auto mb-4"
             >
-              AKSES SEKARANG - RP 300.000
+              BELI SEKARANG - RP 300.000
               <Rocket className="ml-2 h-5 w-5" />
             </Button>
             
