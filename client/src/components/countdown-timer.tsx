@@ -38,27 +38,27 @@ export default function CountdownTimer({ className = "" }: CountdownTimerProps) 
   }, []);
 
   return (
-    <div className={`flex justify-center space-x-4 text-center ${className}`}>
-      <div className="bg-red-500 rounded-lg p-3 min-w-[60px]">
-        <div className="text-2xl font-bold text-white">
+    <div className={`flex justify-center space-x-2 text-center ${className}`}>
+      <div className="bg-red-500 rounded-lg p-2 min-w-[50px]">
+        <div className="text-lg font-bold text-white">
           {timeLeft.days.toString().padStart(2, '0')}
         </div>
         <div className="text-xs text-white">HARI</div>
       </div>
-      <div className="bg-red-500 rounded-lg p-3 min-w-[60px]">
-        <div className="text-2xl font-bold text-white">
+      <div className="bg-red-500 rounded-lg p-2 min-w-[50px]">
+        <div className="text-lg font-bold text-white">
           {timeLeft.hours.toString().padStart(2, '0')}
         </div>
         <div className="text-xs text-white">JAM</div>
       </div>
-      <div className="bg-red-500 rounded-lg p-3 min-w-[60px]">
-        <div className="text-2xl font-bold text-white">
+      <div className="bg-red-500 rounded-lg p-2 min-w-[50px]">
+        <div className="text-lg font-bold text-white">
           {timeLeft.minutes.toString().padStart(2, '0')}
         </div>
         <div className="text-xs text-white">MENIT</div>
       </div>
-      <div className="bg-red-500 rounded-lg p-3 min-w-[60px]">
-        <div className="text-2xl font-bold text-white">
+      <div className="bg-red-500 rounded-lg p-2 min-w-[50px]">
+        <div className="text-lg font-bold text-white">
           {timeLeft.seconds.toString().padStart(2, '0')}
         </div>
         <div className="text-xs text-white">DETIK</div>

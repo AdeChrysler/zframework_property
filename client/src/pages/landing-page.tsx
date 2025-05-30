@@ -452,27 +452,27 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 bg-gradient-blue">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+      {/* Final CTA - Mobile Optimized */}
+      <section className="py-12 bg-gradient-blue">
+        <div className="px-4">
+          <div className="text-center">
+            <h2 className="text-xl font-bold mb-4">
               Siap Upgrade Strategi Meta Ads Property Anda?
             </h2>
             
-            <p className="text-xl text-slate-200 mb-8">
+            <p className="text-base text-slate-200 mb-6">
               Jangan biarkan kompetitor terus unggul. Saatnya Anda menggunakan strategi yang sama dengan developer property sukses.
             </p>
             
-            <Card className="bg-slate-800/50 backdrop-blur-sm border-blue-accent/50 shadow-2xl mb-8">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 text-white">Dengan Property Ads Blueprint, Anda Mendapatkan:</h3>
+            <Card className="bg-slate-800/50 backdrop-blur-sm border-blue-accent/50 shadow-2xl mb-6">
+              <CardContent className="p-4">
+                <h3 className="text-base font-semibold mb-4 text-white">Dengan Property Ads Blueprint, Anda Mendapatkan:</h3>
                 
-                <div className="grid md:grid-cols-2 gap-4 text-left">
+                <div className="space-y-3 text-left">
                   {finalBenefits.map((benefit, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
-                      <span className="text-slate-200">{benefit}</span>
+                    <div key={index} className="flex items-center space-x-2">
+                      <CheckCircle2 className="h-4 w-4 text-green-400 flex-shrink-0" />
+                      <span className="text-slate-200 text-sm">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -481,64 +481,58 @@ export default function LandingPage() {
             
             <Button 
               onClick={handlePurchase}
-              size="lg"
-              className="bg-gradient-cta hover:opacity-90 text-white font-bold text-2xl px-12 py-6 h-auto mb-4"
+              className="w-full bg-gradient-cta hover:opacity-90 text-white font-bold text-lg px-8 py-4 h-auto mb-4"
             >
               AKSES SEKARANG - RP 300.000
-              <Rocket className="ml-3 h-6 w-6" />
+              <Rocket className="ml-2 h-5 w-5" />
             </Button>
             
-            <p className="text-slate-300">
-              <Shield className="inline mr-2 h-4 w-4" />
+            <p className="text-slate-300 text-xs">
+              <Shield className="inline mr-2 h-3 w-3" />
               Jaminan 7 hari uang kembali | Akses langsung | Bahasa Indonesia
             </p>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 bg-slate-900 border-t border-slate-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+      {/* Footer - Mobile Optimized */}
+      <footer className="py-8 bg-slate-900 border-t border-slate-800">
+        <div className="px-4">
+          <div className="text-center space-y-6">
             <div>
-              <h3 className="text-xl font-bold mb-4 text-white">PropertyAds Pro</h3>
-              <p className="text-slate-400 mb-4">
+              <h3 className="text-lg font-bold mb-3 text-white">PropertyAds Pro</h3>
+              <p className="text-slate-400 text-sm">
                 Membantu developer property mencapai ROI optimal melalui Meta Ads yang efektif dan terukur.
               </p>
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-white">Kontak</h4>
-              <div className="space-y-2 text-slate-400">
-                <div className="flex items-center">
-                  <Mail className="mr-3 h-4 w-4 text-blue-accent" />
+              <h4 className="text-base font-semibold mb-3 text-white">Kontak</h4>
+              <div className="space-y-2 text-slate-400 text-sm">
+                <div className="flex items-center justify-center">
+                  <Mail className="mr-2 h-4 w-4 text-blue-accent" />
                   <span>support@propertyads.pro</span>
                 </div>
-                <div className="flex items-center">
-                  <Phone className="mr-3 h-4 w-4 text-blue-accent" />
+                <div className="flex items-center justify-center">
+                  <Phone className="mr-2 h-4 w-4 text-blue-accent" />
                   <span>+62 812-3456-7890</span>
                 </div>
               </div>
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-white">Legal</h4>
-              <div className="space-y-2">
-                <a href="#" className="text-slate-400 hover:text-white transition-colors block">
-                  Syarat & Ketentuan
-                </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors block">
-                  Kebijakan Privasi
-                </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors block">
-                  Kebijakan Refund
-                </a>
-              </div>
+              <ContactForm />
+            </div>
+            
+            <div className="flex justify-center space-x-6 text-slate-400 text-sm">
+              <a href="#" className="hover:text-white transition-colors">Syarat & Ketentuan</a>
+              <a href="#" className="hover:text-white transition-colors">Kebijakan Privasi</a>
+              <a href="#" className="hover:text-white transition-colors">Refund</a>
             </div>
           </div>
           
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 PropertyAds Pro. All rights reserved.</p>
+          <div className="border-t border-slate-800 mt-6 pt-6 text-center text-slate-400">
+            <p className="text-xs">&copy; 2024 PropertyAds Pro. All rights reserved.</p>
           </div>
         </div>
       </footer>
