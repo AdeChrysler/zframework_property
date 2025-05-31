@@ -1,26 +1,8 @@
-
 name = "six-zenith-property-ads"
 compatibility_date = "2024-01-01"
 
-[env.production]
-compatibility_date = "2024-01-01"
-
-[[env.production.routes]]
-pattern = "*"
-zone_name = "your-domain.com"
-
-[build]
-command = "npm run build"
-cwd = "."
-watch_dir = "client/src"
-
-[build.upload]
-format = "directory"
-dir = "dist/public"
-rules = [
-  { type = "ESModule", globs = ["**/*.js"] },
-  { type = "CompiledWasm", globs = ["**/*.wasm"] }
-]
+[assets]
+directory = "./dist/public"
 
 [[redirects]]
 from = "/*"
