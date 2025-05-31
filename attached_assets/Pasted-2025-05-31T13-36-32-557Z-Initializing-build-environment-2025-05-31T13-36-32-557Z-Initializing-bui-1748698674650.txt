@@ -1,0 +1,88 @@
+2025-05-31T13:36:32.557Z	Initializing build environment...
+2025-05-31T13:36:32.557Z	Initializing build environment...
+2025-05-31T13:36:41.060Z	Success: Finished initializing build environment
+2025-05-31T13:36:41.193Z	Cloning repository...
+2025-05-31T13:36:42.912Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-05-31T13:36:42.918Z	Restoring from dependencies cache
+2025-05-31T13:36:42.921Z	Restoring from build output cache
+2025-05-31T13:36:43.337Z	Installing project dependencies: npm clean-install --progress=false
+2025-05-31T13:36:52.264Z	npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+2025-05-31T13:36:52.299Z	npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+2025-05-31T13:37:01.869Z	
+2025-05-31T13:37:01.869Z	added 481 packages, and audited 482 packages in 18s
+2025-05-31T13:37:01.870Z	
+2025-05-31T13:37:01.870Z	64 packages are looking for funding
+2025-05-31T13:37:01.870Z	  run `npm fund` for details
+2025-05-31T13:37:01.923Z	
+2025-05-31T13:37:01.923Z	7 moderate severity vulnerabilities
+2025-05-31T13:37:01.923Z	
+2025-05-31T13:37:01.923Z	To address issues that do not require attention, run:
+2025-05-31T13:37:01.923Z	  npm audit fix
+2025-05-31T13:37:01.924Z	
+2025-05-31T13:37:01.924Z	To address all issues (including breaking changes), run:
+2025-05-31T13:37:01.924Z	  npm audit fix --force
+2025-05-31T13:37:01.925Z	
+2025-05-31T13:37:01.925Z	Run `npm audit` for details.
+2025-05-31T13:37:01.971Z	Executing user build command: npm run build
+2025-05-31T13:37:02.437Z	
+2025-05-31T13:37:02.438Z	> six-zenith-property-ads@1.0.0 build
+2025-05-31T13:37:02.438Z	> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-05-31T13:37:02.438Z	
+2025-05-31T13:37:02.826Z	vite v5.4.14 building for production...
+2025-05-31T13:37:02.973Z	transforming...
+2025-05-31T13:37:03.644Z	Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+2025-05-31T13:37:03.645Z	  npx update-browserslist-db@latest
+2025-05-31T13:37:03.645Z	  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2025-05-31T13:37:09.876Z	✓ 1673 modules transformed.
+2025-05-31T13:37:10.426Z	rendering chunks...
+2025-05-31T13:37:10.446Z	computing gzip size...
+2025-05-31T13:37:10.470Z	../dist/public/index.html                   1.56 kB │ gzip:   0.67 kB
+2025-05-31T13:37:10.476Z	../dist/public/assets/index-CJ7zmxvk.css   62.53 kB │ gzip:  10.89 kB
+2025-05-31T13:37:10.476Z	../dist/public/assets/index-BCP5jHy-.js   381.10 kB │ gzip: 118.00 kB
+2025-05-31T13:37:10.477Z	✓ built in 7.58s
+2025-05-31T13:37:10.553Z	
+2025-05-31T13:37:10.553Z	  dist/index.js  7.1kb
+2025-05-31T13:37:10.553Z	
+2025-05-31T13:37:10.553Z	⚡ Done in 7ms
+2025-05-31T13:37:10.566Z	Success: Build command completed
+2025-05-31T13:37:10.568Z	Executing user deploy command: npx wrangler deploy
+2025-05-31T13:37:12.340Z	npm warn exec The following package was not found and will be installed: wrangler@4.18.0
+2025-05-31T13:37:28.335Z	
+2025-05-31T13:37:28.335Z	 ⛅️ wrangler 4.18.0
+2025-05-31T13:37:28.335Z	───────────────────
+2025-05-31T13:37:28.459Z	▲ [WARNING] Processing wrangler.toml configuration:
+2025-05-31T13:37:28.460Z	
+2025-05-31T13:37:28.460Z	    - Unexpected fields found in build field: "upload"
+2025-05-31T13:37:28.460Z	    - Unexpected fields found in top-level field: "redirects"
+2025-05-31T13:37:28.460Z	
+2025-05-31T13:37:28.461Z	
+2025-05-31T13:37:28.465Z	
+2025-05-31T13:37:28.468Z	✘ [ERROR] Missing entry-point to Worker script or to assets directory
+2025-05-31T13:37:28.469Z	
+2025-05-31T13:37:28.469Z	  
+2025-05-31T13:37:28.469Z	  If there is code to deploy, you can either:
+2025-05-31T13:37:28.469Z	  - Specify an entry-point to your Worker script via the command line (ex: `npx wrangler deploy src/index.ts`)
+2025-05-31T13:37:28.470Z	  - Or add the following to your "wrangler.toml" file:
+2025-05-31T13:37:28.470Z	  
+2025-05-31T13:37:28.470Z	  ```
+2025-05-31T13:37:28.470Z	  main = "src/index.ts"
+2025-05-31T13:37:28.471Z	  
+2025-05-31T13:37:28.471Z	  ```
+2025-05-31T13:37:28.471Z	  
+2025-05-31T13:37:28.471Z	  
+2025-05-31T13:37:28.472Z	  If are uploading a directory of assets, you can either:
+2025-05-31T13:37:28.472Z	  - Specify the path to the directory of assets via the command line: (ex: `npx wrangler deploy --assets=./dist`)
+2025-05-31T13:37:28.472Z	  - Or add the following to your "wrangler.toml" file:
+2025-05-31T13:37:28.472Z	  
+2025-05-31T13:37:28.473Z	  ```
+2025-05-31T13:37:28.473Z	  [assets]
+2025-05-31T13:37:28.473Z	  directory = "./dist"
+2025-05-31T13:37:28.473Z	  
+2025-05-31T13:37:28.473Z	  ```
+2025-05-31T13:37:28.474Z	  
+2025-05-31T13:37:28.474Z	
+2025-05-31T13:37:28.474Z	
+2025-05-31T13:37:28.475Z	
+2025-05-31T13:37:28.475Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-05-31T13:37:28.494Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-05-31_13-37-27_314.log"
+2025-05-31T13:37:28.704Z	Failed: error occurred while running deploy command
